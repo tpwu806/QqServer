@@ -3,7 +3,7 @@ package com.qq.server.model;
 import java.util.*;
 public class ManageClientThread {
 
-	public static HashMap hm=new HashMap<String, SerConClientThread>();
+	public static HashMap<String, SerConClientThread> hm=new HashMap<String, SerConClientThread>();
 	
 	//向hm中添加一个客户端通讯线程
 	public static  void addClientThread(String uid,SerConClientThread ct)
@@ -20,7 +20,7 @@ public class ManageClientThread {
 	public static String getAllOnLineUserid()
 	{
 		//使用迭代器完成
-		Iterator it=hm.keySet().iterator();
+		Iterator<String> it=hm.keySet().iterator();
 		String res="";
 		while(it.hasNext())
 		{

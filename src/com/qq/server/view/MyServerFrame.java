@@ -14,11 +14,16 @@ import java.awt.event.*;
 public class MyServerFrame extends JFrame implements ActionListener {
 
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	JPanel jp1;
 	JButton jb1,jb2;
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		@SuppressWarnings("unused")
 		MyServerFrame mysf=new MyServerFrame();
 	}
 	

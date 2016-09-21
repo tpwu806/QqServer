@@ -21,8 +21,8 @@ public class SerConClientThread  extends Thread{
 	public void notifyOther(String iam)
 	{
 		//得到所有在线的人的线程
-		HashMap hm=ManageClientThread.hm;
-		Iterator it=hm.keySet().iterator();
+		HashMap<?, ?> hm=ManageClientThread.hm;
+		Iterator<?> it=hm.keySet().iterator();
 		
 		while(it.hasNext())
 		{

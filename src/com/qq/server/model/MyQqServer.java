@@ -17,6 +17,7 @@ public class MyQqServer {
 			
 			//在9999监听
 			System.out.println("我是服务器，在9999监听");
+			@SuppressWarnings("resource")
 			ServerSocket ss=new ServerSocket(9999);
 			//阻塞,等待连接
 			while(true)

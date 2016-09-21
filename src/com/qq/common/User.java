@@ -5,6 +5,10 @@ package com.qq.common;
 
 public class User implements java.io.Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String userId;
 	private String passwd;
 	public String getUserId() {
